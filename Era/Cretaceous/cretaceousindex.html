@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cretaceous</title>
+    <link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+    @import url(../../css/navbar.css);
+
+    body {
+        background-color: rgb(255, 245, 212);
+    }
+
+    h1 {
+        text-align: center;
+        font-family: Pridi;
+        font-size: 45px;
+        font-weight: lighter;
+    }
+
+    .aboutcre {
+        width: 380px;
+        height: 400px;
+        object-fit: cover;
+        border: 8px solid rgb(83, 83, 83);
+        border-radius: 4px;
+        padding: 0;
+        width: 400px;
+        margin-left: 180px;
+    }
+
+    .listcre {
+        width: 380px;
+        height: 400px;
+        object-fit: cover;
+        border: 8px solid rgb(83, 83, 83);
+        border-radius: 4px;
+        padding: 0;
+        width: 400px;
+        margin-left: 180px;
+    }
+
+    .ablis {
+        position: relative;
+        font-family: Pridi;
+        font-size: 28px;
+    }
+
+    .ablis div {
+        display: inline-block;
+        position: absolute;
+    }
+
+    .ab {
+        left: 295px;
+    }
+
+    .lis {
+        right: 295px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="../../index.html"><img src="images/home.png" width="14" height="14"></a></li>
+        <li><a href="../../Timeline.html">Timeline</a></li>
+        <li><a href="../../History.html">History</a></li>
+        <li><a href="../../Rateus.html">Rate Us</a></li>
+        <div class="dropdown">
+            <button id="myBtn" class="dropbtn">Dinosaur's Era</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../../Era/Triassic/triassicindex.html">Triassic</a>
+                <a href="../../Era/Jurassic/jurassicindex.html">Jurassic</a>
+                <a href="../../Era/Cretaceous/cretaceousindex.html">Cretaceous</a>
+            </div>
+        </div>
+    </ul>
+
+    <script>
+        // Get the button, and when the user clicks on it, execute myFunction
+        document.getElementById("myBtn").onclick = function () { myFunction() };
+
+        /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+
+    <h1>Cretaceous</h1>
+    <div class="creta">
+        <a href="aboutcretaceous.html"><img src="images/Cretaceous.JPG" class="aboutcre"></a>
+        <a href="listcretaceous1.html"><img src="images/CretaceousList.jpg" class="listcre"></a>
+    </div>
+
+    <div class="ablis">
+        <div class="ab"><a href="aboutcretaceous.html">เหตุการณ์สำคัญ</a></div>
+        <div class="lis"><a href="listcretaceous1.html">รายชื่อไดโนเสาร์</a></div>
+    </div>
+
+</body>
+
+</html>
