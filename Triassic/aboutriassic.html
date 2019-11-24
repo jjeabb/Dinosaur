@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Triassic</title>
+        <link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet" >
+        <style>
+            @import url(../../css/navbar.css);
+            @import url(../../css/button.css);
+    
+            h1 {
+                font-family: Pridi;
+                text-align: center;
+                font-weight: lighter;
+            }
+    
+            body {
+                background-image: url(images/TriassicBg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(images/TriassicBg.jpg);
+            }
+    
+            .par {
+                text-indent: 50px;
+                font-family: Pridi;
+                font-size: 22px;
+                border-radius: 25px;
+                background: rgba(173, 173, 173, 0.6);
+                margin-right: 60px;
+                margin-left: 60px;
+            }
+    
+            .par p {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="../../index.html"><img src="images/home.png" width="14" height="14"></a></li>
+            <li><a href="../../Timeline.html">Timeline</a></li>
+            <li><a href="../../History.html">History</a></li>
+            <li><a href="../../Rateus.html">Rate Us</a></li>
+            <div class="dropdown">
+                    <button id="myBtn" class="dropbtn">Dinosaur's Era</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../../Era/Triassic/triassicindex.html">Triassic</a>
+                        <a href="../../Era/Jurassic/jurassicindex.html">Jurassic</a>
+                        <a href="../../Era/Cretaceous/cretaceousindex.html">Cretaceous</a>
+                    </div>
+                </div>
+        </ul>
+        <script>
+                // Get the button, and when the user clicks on it, execute myFunction
+                document.getElementById("myBtn").onclick = function () { myFunction() };
+        
+                /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+            </script>
+    
+        <h1>เหตุการณ์สำคัญในยุคไทรแอสซิก</h1>
+        <div class="par">
+            <p> เป็นยุคกำเนิดไดโนเสาร์ตัวแรก ราวๆ 230 ล้านปีก่อน การครอบครองโลกของไดโนเสาร์ในยุคนี้โลกถูกปกคลุมด้วยป่าไม้จำนวนมาก พืชตระกูลที่ใช้สปอร์ในการขยายพันธ์ประสบความสำเร็จและมีวิวัฒนาการถึงขั้นสูงสุด ในป่ายุคไทรแอสสิกช่วงแรกนั้นมีสัตว์ใหญ่ไม่มากนักสัตว์ปีกที่ใหญ่ที่สุดคือแมลงปอยักษ์  “เมกานิลร่า”  หรือแมลงป่องยักษ์  “บรอนโตสกอร์ปิโอ” เนื่องจากในช่วงปลายของยุคเพอร์เมียนเกิดการสูญพันธุ์ครั้งใหญ่ของสิ่งมีชีวิตทำให้พวกสัตว์เลื้อยคลานกึ่งเลี้ยงลูกด้วยนมจำนวนมากสูญพันธุ์ไปพวกที่เหลือได้สืบทอดเผ่าพันธุ์มาจนถึงต้นยุคไทรแอสสิกไดโนเสาร์ก็ถือกำเนิดขึ้นโดยพวกมันวิวัฒนาการมาจากสัตว์เลื้อยคลานที่เดินด้วยขาหลังอย่างเจ้าธีโคดอน และอาร์โคซอร์ซึ่งถือกันว่าเป็นบรรพบุรุษของไดโนเสาร์
+การสูญพันธ์ครั้งใหญ่ในยุคเพอร์เมียนทำให้พวกมันสามารถขยายเผ่าพันธุ์ได้อย่างมากมายในช่วงต้นยุคไทรแอสสิกและกลายมาเป็นคู่แข่งของพวกสัตว์เลื้อยคลานกึ่งเลี้ยงลูกด้วยนมที่เหลือ ไดโนเสาร์ในยุคแรกเป็นพวกเดินสองขา เช่น พลาทีโอซอร์ หรือ ซีโลไฟซิส เป็นบรรพบุรุษของพวกกินพืช และกินเนื้อในช่วงเวลาต่อมา ทำให้พวกสัตว์เลี้ยงลูกด้วยนมที่เคยครองโลกในยุคเพอร์เมี่ยนนั้นต้องวิวัฒนาการให้มีขนาดเล็กลงเพื่อที่จะหลบหนีพวกไดโนเสาร์ที่ใหญ่ขึ้น และรวดเร็วขึ้น และหลีกทางให้เผ่าพันธุ์ไดโนเสาร์ก้าวมาครองโลกนี้แทนในที่สุด
+ยุคไทรแอสสิคยังถือว่าเป็นยุคเชื่อมสัตว์โบราณ และไดโนเสาร์ในยุคแรกรวมกัน
+
+            </p>
+        </div>
+        <input class="back" type="button" value="Back" onclick="window.location.href='triassicindex.html'" />
+    </body>
+</html>
