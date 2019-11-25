@@ -6,6 +6,70 @@
     <link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet">
     <style type="text/css">
         @import url(css/navbar.css);
+
+        body {
+            background-image: url(images/ratebg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(images/ratebg.jpg);
+        }
+
+        h3 {
+            font-family: Pridi;
+            font-weight: lighter;
+            font-size: 38px;
+            text-align: center;
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+        }
+
+        p {
+            margin-left: 160px;
+            font-size: 20px;
+            font-family: Pridi;
+        }
+
+        label {
+            font-family: Pridi;
+        }
+
+        .rate1 {
+            padding-bottom: -30px;
+            margin-left: 160px;
+        }
+
+        .rate2 {
+            padding-bottom: 30px;
+            margin-left: 160px;
+        }
+
+        textarea {
+            margin-left: 160px;
+            background-color: rgba(218, 218, 218, 0.39);
+            border-color: black;
+            outline: none;
+        }
+
+        .subbtn {
+            margin-top: 40px;
+            margin-left: 300px;
+        }
+
+        #rate {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        #cmt {
+            font-size:20px;
+            margin-left: 160px;
+        }
+        .q1{
+            padding-top:20px;
+        }
+        .q2{
+            padding-top:-20px;
+        }
     </style>
 </head>
 
@@ -16,23 +80,62 @@
         <li><a href="History.html">History</a></li>
         <li><a class="active" href="Rateus.html">Rate Us</a></li>
         <div class="dropdown">
-                <button id="myBtn" class="dropbtn">Dinosuar's Era</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="Era/Triassic/triassicindex.html">Triassic</a>
-                    <a href="Era/Jurassic/jurassicindex.html">Jurassic</a>
-                    <a href="Era/Cretaceous/cretaceousindex.html">Cretaceous</a>
-                </div>
+            <button id="myBtn" class="dropbtn">Dinosaur's Era</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="Era/Triassic/triassicindex.html">Triassic</a>
+                <a href="Era/Jurassic/jurassicindex.html">Jurassic</a>
+                <a href="Era/Cretaceous/cretaceousindex.html">Cretaceous</a>
             </div>
+        </div>
     </ul>
     <script>
-            // Get the button, and when the user clicks on it, execute myFunction
-            document.getElementById("myBtn").onclick = function () { myFunction() };
-    
-            /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-        </script>
+        // Get the button, and when the user clicks on it, execute myFunction
+        document.getElementById("myBtn").onclick = function () { myFunction() };
+
+        /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+
+
+    <h3>Please Rate us</h3>
+        <div id="rate">
+            <p class="q1">เนื้อหามีความน่าสนใจ</p>
+            <div class="rate1">
+                <input type="radio" id="rate1Choice1" name="rate1[]" value="5 stars">
+                <label for="rate1Choice1">★★★★★</label>
+                <input type="radio" id="rate1Choice2" name="rate1[]" value="4 stars">
+                <label for="rate1Choice2">★★★★</label>
+                <input type="radio" id="rate1Choice3" name="rate1[]" value="3 stars">
+                <label for="rate1Choice3">★★★</label>
+                <input type="radio" id="rate1Choice4" name="rate1[]" value="2 stars">
+                <label for="rate1Choice4">★★</label>
+                <input type="radio" id="rate1Choice5" name="rate1[]" value="1 star">
+                <label for="rate1Choice5">★</label>
+            </div>
+            <p class="q2">ความน่าสนใจของรูปแบบเว็บไซต์</p>
+            <div class="rate2">
+                <input type="radio" id="rate2Choice1" name="rate2[]" value="5 stars">
+                <label for="rate2Choice1">★★★★★</label>
+                <input type="radio" id="rate2Choice2" name="rate2[]" value="4 stars">
+                <label for="rate2Choice2">★★★★</label>
+                <input type="radio" id="rate2Choice3" name="rate2[]" value="3 stars">
+                <label for="rate2Choice3">★★★</label>
+                <input type="radio" id="rate2Choice4" name="rate2[]" value="2 stars">
+                <label for="rate2Choice4">★★</label>
+                <input type="radio" id="rate2Choice5" name="rate2[]" value="1 star">
+                <label for="rate2Choice5">★</label>
+            </div>
+            <div class="comment">
+                <label id="cmt" for="comment">ข้อแนะนำเพิ่มเติม</label><br />
+                <textarea name="comment" rows="4" cols="50"></textarea>
+            </div>
+            <div class="subbtn">
+                <button onclick="window.location.href = 'rated.html';">Submit</button>
+            </div>
+            <br />
+        </div>
 </body>
 
 </html>

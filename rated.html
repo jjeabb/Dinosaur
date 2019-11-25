@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dinosaur Era</title>
+    <link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet">
+    <style>
+        @import url(css/navbar.css);
+
+        body {
+            background-image: url(images/ratebg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(images/ratebg.jpg);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Pridi;
+            font-size: 38px;
+            text-shadow: 2px 4px 3px rgba(248,255,248,1);
+        }
+
+        p {
+            text-align: center;
+            font-family: Pridi;
+            font-size: 28px;
+            text-shadow: 1px 3px 2px rgba(248,255,248,1);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html"><img src="images/home.png" alt="homeIcon" width="14" height="14"></a>
+        </li>
+        <li><a href="Timeline.html">Timeline</a></li>
+        <li><a href="History.html">History</a></li>
+        <li><a class="active" href="Rateus.html">Rate Us</a></li>
+        <div class="dropdown">
+            <button id="myBtn" class="dropbtn">Dinosaur's Era</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="Era/Triassic/triassicindex.html">Triassic</a>
+                <a href="Era/Jurassic/jurassicindex.html">Jurassic</a>
+                <a href="Era/Cretaceous/cretaceousindex.html">Cretaceous</a>
+            </div>
+        </div>
+
+    </ul>
+
+
+    <script>
+        // Get the button, and when the user clicks on it, execute myFunction
+        document.getElementById("myBtn").onclick = function () { myFunction() };
+
+        /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+    <h1>THANK YOU!</h1>
+    <p>Thank you for your respond!</p>
+</body>
+
+</html>
