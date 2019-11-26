@@ -61,14 +61,42 @@
         }
 
         #cmt {
-            font-size:20px;
+            font-size: 20px;
             margin-left: 160px;
         }
-        .q1{
-            padding-top:20px;
+
+        .q1 {
+            padding-top: 20px;
         }
-        .q2{
-            padding-top:-20px;
+
+        .q2 {
+            padding-top: -20px;
+        }
+
+        #Aboutus {
+            float: right;
+        }
+
+        h2 {
+            margin-right: 180px;
+            padding-right: 180px;
+            font-weight: lighter;
+            font-family: Pridi;
+            text-align: right;
+            text-shadow: 1px 3px 2px rgba(116, 116, 116,1)
+        }
+
+        .n1 {
+            padding-left: 200px;
+        }
+        table{
+            margin-right: 120px;
+            padding-right: 120px;
+            font-family: Pridi;
+            font-size:19px;
+        }
+        td{
+            padding:8px;
         }
     </style>
 </head>
@@ -100,42 +128,65 @@
 
 
     <h3>Please Rate us</h3>
-        <div id="rate">
-            <p class="q1">เนื้อหามีความน่าสนใจ</p>
-            <div class="rate1">
-                <input type="radio" id="rate1Choice1" name="rate1[]" value="5 stars">
-                <label for="rate1Choice1">★★★★★</label>
-                <input type="radio" id="rate1Choice2" name="rate1[]" value="4 stars">
-                <label for="rate1Choice2">★★★★</label>
-                <input type="radio" id="rate1Choice3" name="rate1[]" value="3 stars">
-                <label for="rate1Choice3">★★★</label>
-                <input type="radio" id="rate1Choice4" name="rate1[]" value="2 stars">
-                <label for="rate1Choice4">★★</label>
-                <input type="radio" id="rate1Choice5" name="rate1[]" value="1 star">
-                <label for="rate1Choice5">★</label>
-            </div>
-            <p class="q2">ความน่าสนใจของรูปแบบเว็บไซต์</p>
-            <div class="rate2">
-                <input type="radio" id="rate2Choice1" name="rate2[]" value="5 stars">
-                <label for="rate2Choice1">★★★★★</label>
-                <input type="radio" id="rate2Choice2" name="rate2[]" value="4 stars">
-                <label for="rate2Choice2">★★★★</label>
-                <input type="radio" id="rate2Choice3" name="rate2[]" value="3 stars">
-                <label for="rate2Choice3">★★★</label>
-                <input type="radio" id="rate2Choice4" name="rate2[]" value="2 stars">
-                <label for="rate2Choice4">★★</label>
-                <input type="radio" id="rate2Choice5" name="rate2[]" value="1 star">
-                <label for="rate2Choice5">★</label>
-            </div>
-            <div class="comment">
-                <label id="cmt" for="comment">ข้อแนะนำเพิ่มเติม</label><br />
-                <textarea name="comment" rows="4" cols="50"></textarea>
-            </div>
-            <div class="subbtn">
-                <button onclick="window.location.href = 'rated.html';">Submit</button>
-            </div>
-            <br />
+    <div id="rate">
+        <div id="Aboutus">
+            <h2>About Us</h2>
+                <table>
+                    <tr>
+                        <td>62130500039</td>
+                        <td>ธัญลักษณ์</td>
+                        <td>งามชัยพิสิฐ</td>
+                    </tr>
+
+                    <tr>
+                        <td>62130500055</td>
+                        <td>ปาณิสรา</td>
+                        <td>คงใจดี</td>
+
+                    </tr>
+                    <tr>
+                        <td>62130500061</td>
+                        <td>พชรพร</td>
+                        <td>คําสนอง</td>
+                    </tr> 
+                </table>
         </div>
+        <p class="q1">เนื้อหามีความน่าสนใจ</p>
+        <div class="rate1">
+            <input type="radio" id="rate1Choice1" name="rate1[]" value="5 stars">
+            <label for="rate1Choice1">★★★★★</label>
+            <input type="radio" id="rate1Choice2" name="rate1[]" value="4 stars">
+            <label for="rate1Choice2">★★★★</label>
+            <input type="radio" id="rate1Choice3" name="rate1[]" value="3 stars">
+            <label for="rate1Choice3">★★★</label>
+            <input type="radio" id="rate1Choice4" name="rate1[]" value="2 stars">
+            <label for="rate1Choice4">★★</label>
+            <input type="radio" id="rate1Choice5" name="rate1[]" value="1 star">
+            <label for="rate1Choice5">★</label>
+        </div>
+        <p class="q2">ความน่าสนใจของรูปแบบเว็บไซต์</p>
+        <div class="rate2">
+            <input type="radio" id="rate2Choice1" name="rate2[]" value="5 stars">
+            <label for="rate2Choice1">★★★★★</label>
+            <input type="radio" id="rate2Choice2" name="rate2[]" value="4 stars">
+            <label for="rate2Choice2">★★★★</label>
+            <input type="radio" id="rate2Choice3" name="rate2[]" value="3 stars">
+            <label for="rate2Choice3">★★★</label>
+            <input type="radio" id="rate2Choice4" name="rate2[]" value="2 stars">
+            <label for="rate2Choice4">★★</label>
+            <input type="radio" id="rate2Choice5" name="rate2[]" value="1 star">
+            <label for="rate2Choice5">★</label>
+        </div>
+        <div class="comment">
+            <label id="cmt" for="comment">ข้อแนะนำเพิ่มเติม</label><br />
+            <textarea name="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div class="subbtn">
+            <button onclick="window.location.href = 'rated.html';">Submit</button>
+        </div>
+        <br />
+    </div>
+
 </body>
 
 </html>
